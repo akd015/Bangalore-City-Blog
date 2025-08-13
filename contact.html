@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bangalore Journal — Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary">
+      <a class="logo" href="index.html">Bangalore Journal</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a class="" href="index.html">Home</a></li>
+        <li><a class="" href="attractions.html">Attractions</a></li>
+        <li><a class="" href="culture.html">Culture</a></li>
+        <li><a class="" href="gallery.html">Gallery</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+<section class="page-header">
+  <div class="container">
+    <h1>Contact</h1>
+    <p>Questions, tips, or suggestions? I’d love to hear from you.</p>
+  </div>
+</section>
+
+<section class="container contact-section">
+  <form class="contact-form" id="contactForm" novalidate>
+    <fieldset>
+      <legend>Send a Message</legend>
+      <div class="grid-2">
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="subject">Subject *</label>
+        <input id="subject" name="subject" type="text" required />
+      </div>
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+      </div>
+      <div class="form-group checkbox">
+        <input id="newsletter" name="newsletter" type="checkbox" />
+        <label for="newsletter">Subscribe to the Bangalore Journal newsletter</label>
+      </div>
+      <button type="submit" class="btn">Send</button>
+    </fieldset>
+  </form>
+
+  <aside class="contact-aside" aria-label="Map">
+    <h2>Find Bengaluru</h2>
+    <p>Use the map to get your bearings and plan your trip.</p>
+    <div class="map-embed">
+      <iframe
+        title="Bengaluru on Google Maps"
+        src="https://www.google.com/maps?q=Bengaluru,Karnataka&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </aside>
+</section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 Bangalore Journal — A blog about Bengaluru (Bangalore), India.</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
